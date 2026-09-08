@@ -17,7 +17,7 @@ public class DiscountStragegyManager {
         }if(strategyType==StrategyType.FLAT){
             return new FlatDicountStrategy(param1);
         }if(strategyType==StrategyType.PERCENT_WITH_CAP){
-            return new PercentWithCap(param2,param2);
+            return new PercentWithCap(param1,param2);
         }
       return null;
     }
